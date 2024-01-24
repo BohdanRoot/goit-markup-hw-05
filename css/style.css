@@ -554,7 +554,7 @@ overflow: hidden;
     display: flex;
     align-items: baseline;
     width: 1158px;
-    padding: 0 15px;
+    
     margin: 0 auto;
     
 }
@@ -638,5 +638,209 @@ overflow: hidden;
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding-top: 17px;
-    
+    }
+
+
+.footer-subscribe{
+margin-left: 96px;
 }
+
+.subscribe-text{
+    color: #FFF;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    }
+
+.footer-input{
+    width: 264px;
+    height: 40px;
+    color: #FFF ;
+    border-radius: 4px;
+    background-color: transparent;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    font-size: 12px;
+    line-height: 2.0;
+    letter-spacing: 0.04em;
+    border: 1px solid  #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-btn{
+    width: 165px;
+    height: 40px;
+    color:  #FFF;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding: 8px 24px;
+    border-radius: 4px;
+    background: #4D5AE5;
+    border: none;
+    margin-left: 24px;
+}
+
+
+/*------------------------------*/
+/*------------modalwindow-----------*/
+
+.backdrop{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(46, 47, 66, 0.40);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.is-open{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modal{
+    max-width: 408px;
+    height: 584px;
+    border-color: #FCFCFC;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 72px 24px 24px 24px;
+}
+.modal-close-btn{
+    margin-left: auto;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    margin: 0;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+.close-img{}
+
+.modal-text{
+color:  #2E2F42;
+text-align: center;
+max-width: 360px;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.02em;
+margin-bottom: 16px;
+}
+.modal-form{
+    display: flex;
+    width: 360px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.modal-input{
+    width: 360px;
+    height: 58px;
+    border-radius: 4px;
+    border-color: transparent;
+    outline: transparent;
+    padding-left: 38px;
+}
+
+.modal-input:focus{
+    border-color: #4D5AE5;
+}
+
+.modal-input:focus + .modal-icon {
+    stroke: #4D5AE5;
+}
+
+.send-btn{
+    display: inline-flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.60em;
+}
+
+.modal-label{
+    color:  #8E8F99;
+    font-size: 12px;
+    line-height: 1.17
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+}
+
+
+
+.modal-input-wrap{
+    position: relative;
+}
+
+.modal-icon{
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.modal-comment{
+    width: 360px;
+    height: 120px;
+    border-radius: 4px;
+    border-color: transparent;
+    outline: transparent;
+    padding-top: 8px;
+    padding-left: 16px;
+    resize: none;
+}
+
+.modal-checkbox{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.checkbox{}
+
+.checkbox-text{
+    display: flex;
+    width: 338px;
+    color:  #8E8F99;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+}
+
+.checkbox-text a{
+    color:  #4D5AE5;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: 0.04em;
+    text-decoration-line: underline;
+}
+
