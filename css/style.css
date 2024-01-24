@@ -650,6 +650,7 @@ margin-left: 96px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 16px;
     }
 
 .footer-input{
@@ -707,6 +708,7 @@ margin-left: 96px;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visbility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-open{
@@ -716,16 +718,20 @@ margin-left: 96px;
 }
 
 .modal{
-    max-width: 408px;
-    height: 584px;
-    border-color: #FCFCFC;
+    width: 408px;
+    min-height: 584px;
+    background-color: #FCFCFC;
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+    border-radius: 4px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 72px 24px 24px 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 .modal-close-btn{
     margin-left: auto;
     position: absolute;
@@ -738,9 +744,27 @@ margin-left: 96px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 4px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-color: #E7E9FC;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-img{}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus{
+    background-color: #404BBF;
+    border: none;
+}
+
+.modal-close-btn:hover > .close-img,
+.modal-close-btn:focus >.close-img{
+    fill: #FFFFFF;}
+
+.close-img{
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+}
 
 .modal-text{
 color:  #2E2F42;
@@ -769,6 +793,7 @@ margin-bottom: 16px;
     border-color: transparent;
     outline: transparent;
     padding-left: 38px;
+    border: 1px solid  rgba(46, 47, 66, 0.40);
 }
 
 .modal-input:focus{
@@ -827,6 +852,7 @@ margin-bottom: 16px;
     padding-top: 8px;
     padding-left: 16px;
     resize: none;
+    border: 1px solid rgba(46, 47, 66, 0.40)
 }
 
 .modal-checkbox{
