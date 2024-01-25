@@ -874,7 +874,7 @@ margin-bottom: 16px;
 
 .checkbox{}
 
-.checkbox-span{
+.checkbox-span {
     display: inline-flex;
     width: 16px;
     height: 16px;
@@ -896,7 +896,7 @@ margin-bottom: 16px;
 
 
 .checkbox-text{
-    display: flex;
+    
     width: 338px;
     color:  #8E8F99;
     font-size: 12px;
