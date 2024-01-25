@@ -679,7 +679,7 @@ margin-left: 96px;
 }
 
 .subscribe-btn{
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     color:  #FFF;
     text-align: center;
@@ -695,12 +695,13 @@ margin-left: 96px;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-}
+    gap: 16px;
+    }
 
 .subscribe-svg{
-    margin-left: 16px;
-    
-}
+    width: 24px;
+    height: 24px;
+    }
 
 
 /*------------------------------*/
