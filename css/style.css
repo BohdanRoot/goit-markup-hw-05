@@ -536,6 +536,9 @@ overflow: hidden;
 /*------------FOOTER-----------*/
 
 .footer {
+    width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
     background-color: #2E2F42;
     padding: 100px 0;
     }
