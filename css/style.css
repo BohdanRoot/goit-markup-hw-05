@@ -318,6 +318,9 @@ margin-left: auto;
 }
 
 .section-team{
+        width: 1440px;
+            margin-right: auto;
+            margin-left: auto;
     padding-bottom: 120px;
     padding-top: 120px;
     background-color: #F4F4FD;
@@ -423,6 +426,9 @@ margin-left: auto;
 /*------------MAIN-PORTFOLIO--------*/
 
 .section-portfolio{ 
+        width: 1440px;
+            margin-right: auto;
+            margin-left: auto;
     padding-bottom: 120px;
     
 }
